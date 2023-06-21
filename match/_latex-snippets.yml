@@ -1,0 +1,77 @@
+matches:
+
+### Shortcuts ###
+
+- trigger: ;frac
+  form: \frac{[[numer]]}{[[denom]]}
+  label: 'latex: fraction'
+
+- trigger: ;(
+  replace: \left($|$\right)
+  label: 'latex: pair ( parentheses'
+  word: true
+
+- trigger: ;[
+  replace: \left[$|$\right]
+  label: 'latex: pair [ parentheses'
+  word: true
+
+- trigger: ;{
+  replace: \left{$|$\right}
+  label: 'latex: pair { parentheses'
+  word: true
+
+- trigger: ;bf
+  replace: \mathbf{$|$}
+  label: 'latex: math bold face'
+
+- trigger: ;d/d
+  replace: \frac{d}{d $|$}
+  label: 'latex: differentiation'
+
+- trigger: ;df/dx
+  replace: \frac{d}{d x}
+  label: 'latex: differentiation'
+
+- trigger: ;pf/px
+  replace: \frac{\partial f}{\partial x}
+  label: 'latex: partial differentiation'
+
+- trigger: ;p/p
+  replace: \frac{\partial}{\partial $|$}
+  label: 'latex: partial differentiation'
+
+- trigger: ;aligned
+  replace: \begin{aligned}$|$\end{aligned}
+  label: 'latex: align pair'
+
+- trigger: ';$;'
+  replace: |
+    ${{myvar}}$
+  vars:
+    - name: myvar
+      type: match
+      params:
+        trigger: ";aligned"
+  label: 'latex: aligned formula (inline)'
+
+- trigger: ';$$;'
+  replace: |
+    $$
+    \begin{align}
+    $|$
+    \end{align}
+    $$
+  label: 'latex: aligned formula (centered)'
+
+- trigger: ;deter
+  replace: \left|\begin{array}{ccc}1 & 2 & 3 \\ 4 & 5 & 6\\ 7 & 8 & 0 \end{array} \right|
+  label: 'latex: determinant'
+
+- trigger: ;matrix
+  replace: \left|\begin{array}{ccc}1 & 2 & 3 \\ 4 & 5 & 6\\ 7 & 8 & 0 \end{array} \right|
+  label: 'latex: matrix'
+
+- trigger: ;vec
+  replace: \vec{$|$}
+  label: 'latex: vector sign'

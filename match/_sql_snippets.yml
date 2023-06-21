@@ -1,0 +1,153 @@
+matches:
+
+#### Keywords ####
+
+- trigger: sql;incr
+  replace: AUTO_INCREMENT
+  label: 'sql kw: auto increament keyword'
+
+- trigger: sql;pk
+  replace: PRIMARY KEY
+  label: 'sql kw: primary key'
+
+- trigger: sql;nnul
+  replace: NOT NULL
+  label: 'sql kw: not null'
+
+#### DB Manipulation ####
+
+- trigger: sql;irec
+  replace: |
+    INSERT INTO $|$ (  )
+      VALUES (  );
+  label: 'sql: insert record'
+
+- trigger: sql;cdb
+  replace: |
+    CREATE DATABASE $|$;
+  label: 'sql: create new database ...'
+
+- trigger: sql;ddb
+  replace: |
+    DROP DATABASE $|$;
+  label: 'sql: drop database ...'
+
+- trigger: sql;ctbl
+  replace: |
+    CREATE TABLE IF NOT EXISTS $|$(
+    );
+  label: 'sql: create table ... if not exist'
+
+- trigger: sql;dtbl
+  replace: |
+    DROP TABLE IF EXISTS $|$;
+  label: 'sql: drop ... table if exists'
+
+
+- trigger: sql;stbl
+  replace: |
+    SELECT * FROM $|$;
+  label: 'sql: select all from table ...'
+
+- trigger: sql;urow
+  replace: |
+    UPDATE $|$
+      SET col1=val1, col2=val2
+      WHERE col_name = value;
+  label: 'sql: update table ... row based on condition'
+
+- trigger: sql;scol
+  replace: |
+    SELECT $|$ FROM ;
+  label: 'sql: select column'
+
+- trigger: sql;srow
+  replace: |
+    SELECT * FROM $|$
+      WHERE ;
+  label: 'sql: select row meeting condition'
+
+- trigger: sql;ref
+  replace: |
+    SELECT ?
+      FROM ?
+      JOIN ? ON ? = ?
+      WHERE ?
+      GROUP BY ?
+      HAVING\
+      \ ?
+      ORDER BY ?
+      LIMIT ?
+    ;"
+  label: 'sql: full select clause for reference'
+
+#### Management (MySQL) ####
+
+- trigger: mysql;grant:all
+  replace: |
+    GRANT ALL ON `{{database}}`.* TO {{username}}@{{hostname}}
+    IDENTIFIED BY '{{password}}'; FLUSH PRIVILEGES;
+  label: 'mysql: grant ALL privelages (danger!)'
+
+- trigger: mysql;grant:safe
+  replace: |
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, LOCK TABLES,
+    CREATE TEMPORARY TABLES ON `{{database}}`.* TO {{username}}@{{hostname}}
+    IDENTIFIED BY '{{password}}'; FLUSH PRIVILEGES;
+  label: 'mysql: grant (drupal; safe)'
+
+- trigger: mysql;users
+  replace: |
+    SELECT User FROM mysql.user;
+  label: 'mysql: list all users'
+
+- trigger: mysql;user:privelages
+  replace: |
+    SELECT * FROM mysql.user WHERE User='{{username}}';
+  label: 'mysql: list privileges granted to a user'
+
+- trigger: mysql;import:sql
+  replace: |
+    SHOW DATABASES;
+    DROP DATABASE {{database}};
+    CREATE DATABASE {{database}};
+    \
+    USE {{database}};
+    SOURCE {{file}}.sql;
+  label: 'mysql: import data from external sql dump'
+
+#### Shell Commands (MySQL) ####
+
+- trigger: mysql:repair
+  replace: mysqlrepair
+  label: 'mysql sh: repair all MySQL tables'
+
+- trigger: mysql:repair:table
+  replace: REPAIR TABLE $|$;
+  label: 'mysql sh: repair a MySQL table'
+
+- trigger: mysql:check
+  replace: mysqlcheck -o -A -p
+  label: 'mysql sh: db maintenance, check & optimize MySQL tables'
+
+- trigger: mysql:import:file
+  replace: mysql -u {{username}} -p -h {{hostname}} {{dbname}} < {{filename}}.sql
+  label: 'mysql sh: import data from external sql dump into a specific database'
+
+- trigger: mysql:import:file:new
+  replace: mysql -u {{username}} -p -h {{hostname}} < {{filename}}.sql
+  label: 'mysql sh: import data from external sql dump'
+
+- trigger: mysql:dump
+  replace: mysqldump -u {{username}} -h {{hostname}} -p {{dbname}} > {{dbname}}_%Y%m%d-%H%M%S.sql
+  label: 'mysql sh: export (dump) database to a SQL file'
+
+- trigger: mysql:dump:gzip
+  replace: mysqldump -u {{username}} -h {{hostname}} -p {{dbname}} | gzip
+    -9 > {{dbname}}_%Y%m%d-%H%M%S.sql.gz
+  label: 'mysql sh: export and compress (dump) database to a SQL file'
+
+- trigger: mysql:version
+  replace: mysql -v
+  label: 'mysql sh: get MySQL version'
+

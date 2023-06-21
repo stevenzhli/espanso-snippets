@@ -1,0 +1,591 @@
+matches:
+
+#### Symbols ####
+- trigger: ;sum
+  replace: ∑
+  label: 'latex symbol: ∑'
+- trigger: ;prod
+  replace: ∏
+  label: 'latex symbol: ∏'
+- trigger: ;emptyset
+  replace: ∅
+  label: 'latex symbol: ∅'
+- trigger: ;exists
+  replace: ∃
+  label: 'latex symbol: ∃'
+- trigger: ;forall
+  replace: ∀
+  label: 'latex symbol: ∀'
+- trigger: ;infty
+  replace: ∞
+  label: 'latex symbol: ∞'
+- trigger: ;propto
+  replace: ∝
+  label: 'latex symbol: ∝'
+- trigger: ;nabla
+  replace: ∇
+  label: 'latex symbol: ∇'
+- trigger: ;setminus
+  replace: ∖
+  label: 'latex symbol: ∖'
+- trigger: ;dag
+  replace: †
+  label: 'latex symbol: †'
+- trigger: ;ddag
+  replace: ‡
+  label: 'latex symbol: ‡'
+- trigger: ;mid
+  replace: ∣
+  label: 'latex symbol: ∣'
+- trigger: ;hline
+  replace: —
+  label: 'latex symbol: —'
+- trigger: ;neg
+  replace: ¬
+  label: 'latex symbol: ¬'
+- trigger: ;int
+  replace: ∫
+  label: 'latex symbol: ∫'
+- trigger: ;partial
+  replace: ∂
+  label: 'latex symbol: ∂'
+- trigger: ;pm
+  replace: ±
+  label: 'latex symbol: ±'
+- trigger: ;mp
+  replace: ∓
+  label: 'latex symbol: ∓'
+- trigger: ;prime
+  replace: '′'
+  label: 'latex symbol: ′'
+- trigger: ;times
+  replace: ×
+  label: 'latex symbol: ×'
+- trigger: ;div
+  replace: ÷
+  label: 'latex symbol: ÷'
+- trigger: ;sqrt
+  replace: √
+  label: 'latex symbol: √'
+- trigger: ;surd
+  replace: √
+  label: 'latex symbol: √'
+- trigger: ;uplus
+  replace: ⊎
+  label: 'latex symbol: ⊎'
+- trigger: ;amalg
+  replace: ⨿
+  label: 'latex symbol: ⨿'
+- trigger: ;angle
+  replace: ∠
+  label: 'latex symbol: ∠'
+
+#### Dots ####
+- trigger: ;bullet
+  replace: •
+  label: 'latex symbol: •'
+- trigger: ;circ
+  replace: ◦
+  label: 'latex symbol: ◦'
+- trigger: ;cdot
+  replace: ·
+  label: 'latex symbol: ·'
+- trigger: ;odot
+  replace: ⊙
+  label: 'latex symbol: ⊙'
+- trigger: ;ominus
+  replace: ⊖
+  label: 'latex symbol: ⊖'
+- trigger: ;oplus
+  replace: ⊕
+  label: 'latex symbol: ⊕'
+- trigger: ;oslash
+  replace: ⊘
+  label: 'latex symbol: ⊘'
+- trigger: ;otimes
+  replace: ⊗
+  label: 'latex symbol: ⊗'
+- trigger: ;ldots
+  replace: …
+  label: 'latex symbol lower dots, …'
+- trigger: ;vdots
+  replace: ⋮
+  label: 'latex symbol: ⋮'
+- trigger: ;ddots
+  replace: ⋱
+  label: 'latex symbol: ⋱'
+- trigger: ;degree
+  replace: º
+  label: 'latex symbol: º'
+
+#### Directional ####
+- trigger: ;cap
+  replace: ∩
+  label: 'latex symbol: ∩'
+- trigger: ;cup
+  replace: ∪
+  label: 'latex symbol: ∪'
+- trigger: ;sqcap
+  replace: ⊓
+  label: 'latex symbol: ⊓'
+- trigger: ;sqcup
+  replace: ⊔
+  label: 'latex symbol: ⊔'
+- trigger: ;sqsubseteq
+  replace: ⊑
+  label: 'latex symbol: ⊑'
+- trigger: ;sqsupseteq
+  replace: ⊒
+  label: 'latex symbol: ⊒'
+- trigger: ;subset
+  replace: ⊂
+  label: 'latex symbol: ⊂'
+- trigger: ;subseq
+  replace: ⊆
+  label: 'latex symbol: ⊆'
+- trigger: ;supset
+  replace: ⊃
+  label: 'latex symbol: ⊃'
+- trigger: ;supseq
+  replace: ⊇
+  label: 'latex symbol: ⊇'
+- trigger: ;lceil
+  replace: ⌈
+  label: 'latex symbol: ⌈'
+- trigger: ;lfloor
+  replace: ⌊
+  label: 'latex symbol: ⌊'
+- trigger: ;rceil
+  replace: ⌉
+  label: 'latex symbol: ⌉'
+- trigger: ;rfloor
+  replace: ⌋
+  label: 'latex symbol: ⌋'
+- triggers: [;bot, ;perp]
+  replace: ⊥
+  label: 'latex symbol: ⊥'
+- trigger: ;top
+  replace: ⊤
+  label: 'latex symbol: ⊤'
+- trigger: ;dashv
+  replace: ⊣
+  label: 'latex symbol: ⊣'
+- trigger: ;vdash
+  replace: ⊢
+  label: 'latex symbol: ⊢'
+
+#### Arrow like ####
+- trigger: ;uparrow
+  replace: ↑
+  label: 'latex symbol: ↑'
+- trigger: ;Uparrow
+  replace: ⇑
+  label: 'latex symbol: ⇑'
+- trigger: ;downarrow
+  replace: ↓
+  label: 'latex symbol: ↓'
+- trigger: ;Downarrow
+  replace: ⇓
+  label: 'latex symbol: ⇓'
+- trigger: ;leftarrow
+  replace: ←
+  label: 'latex symbol: ←'
+- trigger: ;Leftarrow
+  replace: ⇐
+  label: 'latex symbol: ⇐'
+- trigger: ;rightarrow
+  replace: →
+  label: 'latex symbol: →'
+- trigger: ;Rightarrow
+  replace: ⇒
+  label: 'latex symbol: ⇒'
+- trigger: ;updownarrow
+  replace: ↕
+  label: 'latex symbol: ↕'
+- trigger: ;Updownarrow
+  replace: ⇕
+  label: 'latex symbol: ⇕'
+- trigger: ;leftrightarrow
+  replace: ↔
+  label: 'latex symbol: ↔'
+- trigger: ;Leftrightarrow
+  replace: ⇔
+  label: 'latex symbol: ⇔'
+- trigger: ;nearrow
+  replace: ↗
+  label: 'latex symbol: ↗'
+- trigger: ;nwarrow
+  replace: ↖
+  label: 'latex symbol: ↖'
+- trigger: ;searrow
+  replace: ↘
+  label: 'latex symbol: ↘'
+- trigger: ;swarrow
+  replace: ↙
+  label: 'latex symbol: ↙'
+- trigger: ;leftharpoondown
+  replace: ↽
+  label: 'latex symbol: ↽'
+- trigger: ;leftharpoonup
+  replace: ↼
+  label: 'latex symbol: ↼'
+- trigger: ;rightharpoondown
+  replace: ⇁
+  label: 'latex symbol: ⇁'
+- trigger: ;rightharpoonup
+  replace: ⇀
+  label: 'latex symbol: ⇀'
+
+
+- trigger: ;vee
+  replace: ∨
+  label: 'latex symbol: ∨'
+- trigger: ;wedge
+  replace: ∧
+  label: 'latex symbol: ∧'
+- trigger: ;lOR
+  replace: ∨
+  label: 'latex symbol: ∨'
+- trigger: ;lAND
+  replace: ∧
+  label: 'latex symbol: ∧'
+- trigger: ;gg
+  replace: ≫
+  label: 'latex symbol: ≫'
+- trigger: ;ll
+  replace: ≪
+  label: 'latex symbol: ≪'
+- trigger: ;frown
+  replace: ⌢
+  label: 'latex symbol: ⌢'
+- trigger: ;smile
+  replace: ⌣
+  label: 'latex symbol: ⌣'
+- trigger: ;langle
+  replace: 〈
+  label: 'latex symbol: 〈'
+- trigger: ;rangle
+  replace: 〉
+  label: 'latex symbol: 〉'
+- trigger: ;precise
+  replace: ≺
+  label: 'latex symbol: ≺'
+- trigger: ;preceq
+  replace: ≼
+  label: 'latex symbol: ≼'
+- trigger: ;succ
+  replace: ≻
+  label: 'latex symbol: ≻'
+- trigger: ;suceq
+  replace: ≽
+  label: 'latex symbol: ≽'
+- trigger: ;simeq
+  replace: ≃
+  label: 'latex symbol: ≃'
+- trigger: ;neq
+  replace: ≠
+  label: 'latex symbol: ≠'
+- trigger: ;equiv
+  replace: ≡
+  label: 'latex symbol: ≡'
+- trigger: ;similar
+  replace: ∼
+  label: 'latex symbol: ∼'
+- trigger: ;approx
+  replace: ≈
+  label: 'latex symbol: ≈'
+- trigger: ;leq
+  replace: ≤
+  label: 'latex symbol: ≤'
+- trigger: ;geq
+  replace: ≥
+  label: 'latex symbol: ≥'
+- trigger: ;asymp
+  replace: ≍
+  label: 'latex symbol: ≍'
+- trigger: ;bowtie
+  replace: ⋈
+  label: 'latex symbol: ⋈'
+- trigger: ;isin
+  replace: ∈
+  label: 'latex symbol: ∈'
+- trigger: ;ni
+  replace: ∋
+  label: 'latex symbol: ∋'
+- trigger: ;notin
+  replace: ∉
+  label: 'latex symbol: ∉'
+- trigger: ;nparallel
+  replace: ∦
+  label: 'latex symbol: ∦'
+- trigger: ;parallel
+  replace: ∥
+  label: 'latex symbol: ∥'
+
+### Greek letters ###
+- trigger: ;Alpha
+  replace: Α
+  label: 'greek letter: Α'
+- trigger: ;alpha
+  replace: α
+  label: 'greek letter: α'
+- trigger: ;Beta
+  replace: Β
+  label: 'greek letter: Β'
+- trigger: ;beta
+  replace: β
+  label: 'greek letter: β'
+- trigger: ;varbeta
+  replace: ϐ
+  label: 'greek letter: ϐ'
+- trigger: ;Delta
+  replace: Δ
+  label: 'greek letter: Δ'
+- trigger: ;delta
+  replace: δ
+  label: 'greek letter: δ'
+- trigger: ;Epsilon
+  replace: Ε
+  label: 'greek letter: Ε'
+- trigger: ;epsilon
+  replace: ϵ
+  label: 'greek letter: ϵ'
+- trigger: :varepsilon
+  replace: ε
+  label: 'greek letter: ε'
+- trigger: ;Phi
+  replace: Φ
+  label: 'greek letter: Φ'
+- trigger: ;phi
+  replace: 𝜙
+  label: 'greek letter: 𝜙'
+- trigger: ;varphi
+  replace: φ
+  label: 'greek letter: φ'
+- trigger: ;Gamma
+  replace: Γ
+  label: 'greek letter: Γ'
+- trigger: ;gamma
+  replace: γ
+  label: 'greek letter: γ'
+- trigger: ;Eta
+  replace: Η
+  label: 'greek letter: Η'
+- trigger: ;eta
+  replace: η
+  label: 'greek letter: η'
+- trigger: ;Iota
+  replace: Ι
+  label: 'greek letter: Ι'
+- trigger: ;iota
+  replace: ι
+  label: 'greek letter: ι'
+- trigger: ;Theta
+  replace: Θ
+  label: 'greek letter: Θ'
+- trigger: ;theta
+  replace: θ
+  label: 'greek letter: θ'
+- trigger: ;vartheta
+  replace: ϑ
+  label: 'greek letter: ϑ'
+- trigger: ;Kappa
+  replace: Κ
+  label: 'greek letter: Κ'
+- trigger: ;kappa
+  replace: κ
+  label: 'greek letter: κ'
+- trigger: :varkappa
+  replace: ϰ
+  label: 'greek letter: ϰ'
+- trigger: ;Lambda
+  replace: Λ
+  label: 'greek letter: Λ'
+- trigger: ;lambda
+  replace: λ
+  label: 'greek letter: λ'
+- trigger: ;Mu
+  replace: Μ
+  label: 'greek letter: Μ'
+- trigger: ;mu
+  replace: μ
+  label: 'greek letter: μ'
+- trigger: ;Nu
+  replace: Ν
+  label: 'greek letter: Ν'
+- trigger: ;nu
+  replace: ν
+  label: 'greek letter: ν'
+- trigger: ;Omicron
+  replace: Ο
+  label: 'greek letter: Ο'
+- trigger: ;omicron
+  replace: ο
+  label: 'greek letter: ο'
+- trigger: ;Pi
+  replace: Π
+  label: 'greek letter: Π'
+- trigger: ;pi
+  replace: π
+  label: 'greek letter: π'
+- trigger: ;varpi
+  replace: ϖ
+  label: 'greek letter: ϖ'
+- trigger: ;Chi
+  replace: Χ
+  label: 'greek letter: Χ'
+- trigger: ;chi
+  replace: χ
+  label: 'greek letter: χ'
+- trigger: ;Rho
+  replace: Ρ
+  label: 'greek letter: Ρ'
+- trigger: ;rho
+  replace: ρ
+  label: 'greek letter: ρ'
+- trigger: :varrho
+  replace: ϱ
+  label: 'greek letter: ϱ'
+- trigger: ;Sigma
+  replace: Σ
+  label: 'greek letter: Σ'
+- trigger: ;sigma
+  replace: σ
+  label: 'greek letter: σ'
+- trigger: ;varsigma
+  replace: ς
+  label: 'greek letter: ς'
+- trigger: ;Tau
+  replace: Τ
+  label: 'greek letter: Τ'
+- trigger: ;tau
+  replace: τ
+  label: 'greek letter: τ'
+- trigger: ;Upsilon
+  replace: Υ
+  label: 'greek letter: Υ'
+- trigger: ;upsilon
+  replace: υ
+  label: 'greek letter: υ'
+- trigger: ;Omega
+  replace: Ω
+  label: 'greek letter: Ω'
+- trigger: ;omega
+  replace: ω
+  label: 'greek letter: ω'
+- trigger: ;Xi
+  replace: Ξ
+  label: 'greek letter: Ξ'
+- trigger: ;xi
+  replace: ξ
+  label: 'greek letter: ξ'
+- trigger: ;Psi
+  replace: Ψ
+  label: 'greek letter: Ψ'
+- trigger: ;psi
+  replace: ψ
+  label: 'greek letter: ψ'
+- trigger: ;varPsi
+  replace: Ⲯ
+  label: 'greek letter: Ⲯ'
+- trigger: ;varpsi
+  replace: ⲯ
+  label: 'greek letter: ⲯ'
+- trigger: ;Zeta
+  replace: Ζ
+  label: 'greek letter: Ζ'
+- trigger: ;zeta
+  replace: ζ
+  label: 'greek letter: ζ'
+
+#### Shapes ####
+- trigger: ;triangle
+  replace: △
+  label: 'latex symbol: △'
+- trigger: ;trleft
+  replace: ▷
+  label: 'latex symbol: ▷'
+- trigger: ;trright
+  replace: ◃
+  label: 'latex symbol: ◃'
+- trigger: ;trdown
+  replace: ▽
+  label: 'latex symbol: ▽'
+- trigger: ;spadesuit
+  replace: ♠
+  label: 'latex symbol: ♠'
+- trigger: ;clubsuit
+  replace: ♣
+  label: 'latex symbol: ♣'
+- trigger: ;diamond
+  replace: ♦
+  label: 'latex symbol: ♦'
+- trigger: ;heartsuit
+  replace: ♥
+  label: 'latex symbol: ♥'
+- trigger: ;copyright
+  replace: ©
+  label: 'latex symbol: ©'
+- trigger: ;flat
+  replace: ♭
+  label: 'latex symbol: ♭'
+- trigger: ;natural
+  replace: ♮
+  label: 'latex symbol: ♮'
+- trigger: ;oint
+  replace: ∮
+  label: 'latex symbol: ∮'
+- trigger: ;wr
+  replace: ≀
+  label: 'latex symbol: ≀'
+- trigger: ;star
+  replace: ★
+  label: 'latex symbol: ★'
+- trigger: ;sun
+  replace: ☉
+  label: 'latex symbol: ☉'
+- trigger: ;earth
+  replace: ♁
+  label: 'latex symbol: ♁'
+- trigger: ;yen
+  replace: ¥
+  label: 'latex symbol: ¥'
+- trigger: ;pounds
+  replace: £
+  label: 'latex symbol: £'
+- trigger: ;euro
+  replace: €
+  label: 'latex symbol: €'
+- trigger: ;AA
+  replace: Å
+  label: 'latex symbol: Å'
+- trigger: ;aleph
+  replace: ℵ
+  label: 'latex symbol: ℵ'
+- trigger: ;ast
+  replace: ∗
+  label: 'latex symbol: ∗'
+- trigger: ;ell
+  replace: ℓ
+  label: 'latex symbol: ℓ'
+- trigger: ;hbar
+  replace: ħ
+  label: 'latex symbol: ħ'
+- trigger: ;Im
+  replace: ℑ
+  label: 'latex symbol: ℑ'
+- trigger: ;imath
+  replace: ı
+  label: 'latex symbol: ı'
+- trigger: ;wp
+  replace: ℘
+  label: 'latex symbol: ℘'
+- trigger: ;Par
+  replace: ❡
+  label: 'latex symbol: ❡'
+- trigger: ;Re
+  replace: ℜ
+  label: 'latex symbol: ℜ'
+- trigger: ;sharp
+  replace: ♯
+  label: 'latex symbol: ♯'

@@ -1,0 +1,20 @@
+matches:
+- trigger: ';= '
+  replace: '<- '
+  label: 'r: assignment'
+
+- trigger: ';* '
+  replace: '%*% '
+  label: 'r: matrix product'
+
+- trigger: ';in '
+  replace: '%in% '
+  label: 'r: matrix product'
+
+- trigger: ';r '
+  replace: |
+    ```{r}
+    $|$
+    ```
+  label: 'rmd: r codeblock rstudio'
+

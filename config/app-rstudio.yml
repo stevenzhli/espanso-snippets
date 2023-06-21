@@ -1,0 +1,6 @@
+filter_class: "rstudio"
+
+extra_includes:
+- "../match/_md-snippets.yml"
+- "../match/_latex-snippets.yml"
+- "../match/_r-snippets.yml"

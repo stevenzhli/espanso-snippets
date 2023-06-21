@@ -1,0 +1,181 @@
+### DEFAULT EXPANSIONS TO LOAD ###
+
+matches:
+
+### Date time ###
+- trigger: ;ctimes
+  replace: '{{myvar}}'
+  label: 'dtime: current time, short'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%H%M%S'
+- trigger: ;ctimel
+  replace: '{{myvar}}'
+  label: 'dtime: current time, long'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%H:%M:%S %p'
+- trigger: ;dates
+  replace: '{{myvar}}'
+  label: 'dtime: current date, short'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%Y%m%d'
+- trigger: ;datel
+  replace: '{{myvar}}'
+  label: 'dtime: current date, long'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%Y%m%d %A'
+- trigger: ;dtimes
+  replace: '{{myvar}}'
+  label: 'dtime: time stamp, short'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%Y%m%d-%H%M%S'
+- trigger: ;dtimel
+  replace: '{{myvar}}'
+  label: 'dtime: time stamp, long'
+  vars:
+  - name: myvar
+    type: date
+    params:
+      format: '%Y-%m-%d %I:%M %p'
+
+### Heading ###
+- trigger: ;#3
+  replace: '### $|$ ###'
+- trigger: ;#4
+  replace: '#### $|$ ####'
+
+### Units ###
+- trigger: oC
+  replace: °C
+  label: 'units symbol: Celsius'
+- trigger: oF
+  replace: °F
+  label: 'units symbol: Fahrenheit'
+- trigger: +-
+  replace: ±
+  label: 'math symbol: plus minus (⇧⌥+)'
+
+### System Symbols ###
+- trigger: ;ndash
+  replace: –
+  label: 'system symbol: –'
+- trigger: ;mdash
+  replace: —
+  label: 'system symbol: —'
+- trigger: ;copyri
+  replace: ©
+  label: 'system symbol: ©'
+- trigger: ;registered
+  replace: ®
+  label: 'system symbol: ®'
+# - trigger: ;leftarrow
+#   replace: ←
+#   label: 'system symbol: ←'
+# - trigger: ;rightarrow
+#   replace: →
+#   label: 'system symbol: →'
+- trigger: ;uparrow
+  replace: ↑
+  label: 'system symbol: ↑'
+- trigger: ;downarrow
+  replace: ↓
+  label: 'system symbol: ↓'
+- trigger: ;home
+  replace: ↖
+  label: 'system symbol: ↖'
+- trigger: ;end
+  replace: ↘
+  label: 'system symbol: ↘'
+- trigger: ;enter
+  replace: ↩
+  label: 'system symbol: ↩'
+- trigger: ;return
+  replace: ↵
+  label: 'system symbol: ↵'
+- trigger: ;pageup
+  replace: ⇞
+  label: 'system symbol: ⇞'
+- trigger: ;pagedown
+  replace: ⇟
+  label: 'system symbol: ⇟'
+- trigger: ;backtab
+  replace: ⇤
+  label: 'system symbol: ⇤'
+- trigger: ;tab
+  replace: ⇥
+  label: 'system symbol: ⇥'
+- trigger: ;shift
+  replace: ⇧
+  label: 'system symbol: ⇧'
+- trigger: ;caps_lock
+  replace: ⇪
+  label: 'system symbol: ⇪'
+- trigger: ;ctrl
+  replace: ⌃
+  label: 'system symbol: ⌃'
+- trigger: ;enter
+  replace: ⌅
+  label: 'system symbol: ⌅'
+- trigger: ;cmd
+  replace: ⌘
+  label: 'system symbol: ⌘'
+- triggers: [;alt, ;opt]
+  replace: ⌥
+  label: 'system symbol: ⌥'
+- trigger: ;delete
+  replace: ⌦
+  label: 'system symbol: ⌦'
+- trigger: ;backspace
+  replace: ⌫
+  label: 'system symbol: ⌫'
+- trigger: ;esc
+  replace: ⎋
+  label: 'system symbol: ⎋'
+- trigger: ;eject
+  replace: ⏏
+  label: 'system symbol: ⏏'
+- trigger: ;space
+  replace: ␣
+  label: 'system symbol: ␣'
+- trigger: ;star
+  replace: ★
+  label: 'system symbol: ★'
+- trigger: ;heart
+  replace: ♥
+  label: 'system symbol: ♥'
+- trigger: ;recycle
+  replace: ♻
+  label: 'system symbol: ♻'
+- trigger: ;check
+  replace: ✓
+  label: 'system symbol: ✓'
+- trigger: ;pound
+  replace: £
+  label: 'system symbol: £'
+- trigger: ;yen
+  replace: ¥
+  label: 'system symbol: ¥'
+- trigger: ;euro
+  replace: €
+  label: 'system symbol: €'
+- trigger: ;tm
+  replace: ™
+  label: 'system symbol: ™'
+- trigger: ;apple
+  replace: 
+  label: 'system symbol: '
+

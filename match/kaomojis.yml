@@ -1,0 +1,63 @@
+matches:
+  - trigger: ";dance"
+    replace: "`ᕕ(⌐■_■)ᕗ ♪♬`"
+
+  - trigger: ";flip"
+    replace: "`(╯°□°）╯︵ ┻━┻`"
+
+  - trigger: ";unflip"
+    replace: "┬──┬◡o(° -°``)﻿"
+
+  - trigger: ";nice"
+    replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)"
+
+  - trigger: ";dwi"
+    replace: "(⌐■_■)"
+
+  - trigger: ";hg"
+    replace: "ᕕ( ᐛ )ᕗ"
+
+  - trigger: ";loading"
+    replace: "███▒▒▒▒▒▒▒"
+
+  - trigger: ";lol"
+    replace: "L(° O °L)"
+
+  - trigger: ";nerd"
+    replace: "(⌐⊙_⊙)"
+
+  - trigger: ";smirk"
+    replace: "¬‿¬"
+
+  - trigger: ";this"
+    replace: "( ͡° ͜ʖ ͡°)_/¯"
+
+  - trigger: ";loveeyes"
+    replace: "(♥_♥)"
+
+  - trigger: ";punch"
+    replace: "O=('-'Q)"
+
+  - trigger: ";omgwhat"
+    replace: "◕_◕"
+
+  - trigger: ";squid"
+    replace: "くコ:彡"
+
+  - trigger: ";denko"
+    replace: "(´・ω・｀)"
+
+  - trigger: ";owo"
+    replace: "ʘwʘ"
+
+  - trigger: ";hello"
+    replace: "( ･ω･)ﾉ"
+
+  - trigger: ";mad"
+    replace: "(๑•̀д•́๑)"
+
+  - trigger: ";awk"
+    replace: "( ་ ⍸ ་ )"
+
+  - trigger: ";pika"
+    replace: "(๑◕ܫ◕๑)"

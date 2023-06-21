@@ -1,0 +1,6 @@
+filter_class: "obsidian|Typora"
+
+extra_includes:
+- "../match/_md-snippets.yml"
+- "../match/_latex-snippets.yml"
+

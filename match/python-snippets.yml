@@ -1,0 +1,54 @@
+matches:
+# import library
+- trigger: ;plt
+  replace: 'import matplotlib.pyplot as plt'
+  label: 'py: matplotlab pyplot'
+- trigger: ;np
+  replace: 'import numpy as np'
+  label: 'py: numpy'
+- trigger: ;pd
+  replace: 'import pandas as pd'
+  label: 'py: pandas'
+- trigger: ;sns
+  replace: 'import seaborn as sns'
+  label: 'py: seaborn'
+- trigger: ;mape
+  replace: from sklearn.metrics import mean_absolute_percentage_error as mape
+  label: 'sklearn metrics mape'
+- trigger: ;mse
+  replace: from sklearn.metrics import mean_squared_error as mse
+  label: 'sklearn metrics mse'
+- trigger: ';sm '
+  replace: import statsmodels.api as sm
+  label: 'statsmodels api'
+- trigger: ;smf
+  replace: import statsmodels.formula.api as smf
+  label: 'statsmodels formula interface api'
+- trigger: ;smt
+  replace: import statsmodels.tsa.api as smt
+  label: 'statsmodels time series api'
+- trigger: ;tssplit
+  replace: from sklearn.model_selection import TimeSeriesSplit
+  label: 'sklearn time series split'
+
+# sortcuts
+- trigger: ';figax '
+  replace: fig, ax = plt.subplots(figsize=(6, 4))
+  label: 'py: init matplotlib figure and axes, single axes obj'
+- trigger: ;figaxs
+  replace: fig, axs = plt.subplots($|$, , figsize=(12, 8))
+  label: 'py: init matplotlib figure and axes, multiple axes objs'
+
+- trigger: ;dfinfo
+  replace: |
+    def get_df_info(df):
+      # basic dataframe info
+      print(f"{'rows: ':>10}{df.shape[0]}")
+      print(f"{'columns: ':>10}{df.shape[1]}")
+      # data type, unique, missing for each field
+      return pd.concat({
+          'dtype': df.dtypes,
+          'n unique': df.nunique(),
+          'n missing': df.isna().sum()
+      }, axis=1).T
+  label: 'function to get basic dataframe info'

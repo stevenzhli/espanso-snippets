@@ -1,0 +1,131 @@
+global_vars:
+- name: clipboard
+  type: clipboard
+
+matches:
+
+### code blocks ###
+
+- trigger: ';java '
+  replace: |
+    ```java
+    $|$
+    ```
+  label: 'md: java code block'
+
+- trigger: ';sh '
+  replace: |
+    ```sh
+    $|$
+    ```
+  label: 'md: shell script code block'
+
+- trigger: ';py '
+  replace: |
+    ```python
+    $|$
+    ```
+  label: 'md: python code block'
+
+- trigger: ';sql '
+  replace: |
+    ```sql
+    $|$
+    ```
+  label: 'md: sql code block'
+
+- trigger: ';r '
+  replace: |
+    ```r
+    $|$
+    ```
+  label: 'md: r codeblock vscode'
+
+### Format Shortcuts ###
+
+- trigger: ;h1
+  replace: '# $|$'
+  label: 'md: heading'
+
+- trigger: ;h2
+  replace: '## $|$'
+  label: 'md: heading'
+
+- trigger: ;h3
+  replace: '### $|$'
+  label: 'md: heading'
+
+- trigger: ;h4
+  replace: '#### $|$'
+  label: 'md: heading'
+
+- trigger: ;h5
+  replace: '##### $|$'
+  label: 'md: heading'
+
+- trigger: ;h6
+  replace: '###### $|$'
+  label: 'md: heading'
+
+- trigger: ;hr
+  replace: '----'
+  label: 'md: horizontal rule line'
+
+- trigger: ;img
+  replace: '![](../.assets/{{clipboard}} =400x)'
+  label: 'md: paste image link for vscode markdown'
+
+- triggers: [;url, ;link]
+  replace: '[$|$]({{clipboard}})'
+  label: 'md: paste url from clipboard into vscode markdown'
+
+- trigger: ;br
+  replace: |
+    <br>
+    <br>
+  label: 'md: insert 2 empty lines'
+
+- trigger: ;ith
+  replace: i^{\th}
+  label: 'md: upper script'
+
+- trigger: ;ml
+  replace: "\n\n\n\n"
+  label: 'md: multi (2) empty lines'
+
+- trigger: ;mb
+  replace: |
+    >
+    >
+    >
+    >
+  label: 'md: multi (4) blockquote lines'
+
+- trigger: ;task
+  replace: "- [ ] "
+  label: 'md: task'
+
+- trigger: ;taskd
+  replace: "- [x] "
+  label: 'md: task done'
+
+- trigger: ;tips
+  replace: "> [!tip] "
+  label: 'md: callout tips'
+
+- trigger: ;todo
+  replace: |
+    #todo
+    - [ ] $|$
+  label: 'md: todo checkbox'
+
+- trigger: ;moc
+  replace: |
+    #moc
+    ```dataview
+    LIST
+    FROM #lang/py AND #guide
+    WHERE file.name != this.file.name AND !contains(file.inlinks, this.file.link)
+    SORT file.name ASC
+    ```
+  label: 'md: obsidian moc(map of content) template with a dataview inbox'
